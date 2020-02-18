@@ -47,6 +47,15 @@ strong {
   color: var(--my-color-dark);
 }
 
+@media screen and (max-width: 414px) {
+        .navbar-light .navbar-brand, .navbar-light .navbar-brand:focus {
+        font-size:1.25rem;
+        }
+        .navbar-light {
+          padding: 8px 36px !important;
+        }
+}
+
 a {
   color: var(--my-color);
   cursor: pointer;
@@ -182,6 +191,11 @@ dd.open {
   .card-columns .card-text {
     display: none;
   }
+}
+
+.card {
+  /*display: inline-block;*/
+  -webkit-column-break-inside: avoid;
 }
 
 .card-img-top {
