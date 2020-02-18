@@ -1,0 +1,35 @@
+/**
+ * Created by josh on 10/16/14.
+ */
+.font-gotham-light {
+    font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, sans-serif !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
+}
+.font-gotham-book {
+    font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+.font-gotham-medium {
+    font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+}
+
+@font-face {
+    font-family: 'StagSans-Light'; /*a name to be used later*/
+    src:    url('/wp-content/themes/Dexter/fonts/StagSans-Light-Web.eot?#iefix') format('embedded-opentype'),
+            url('/wp-content/themes/Dexter/fonts/StagSans-Light-Web.woff') format('woff'),
+            url('/wp-content/themes/Dexter/fonts/StagSans-Light-Web.ttf')  format('truetype'),
+            url('/wp-content/themes/Dexter/fonts/StagSans-Light-Web.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'StagSans-Thin'; /*a name to be used later*/
+    src:    url('/wp-content/themes/Dexter/fonts/StagSans-Thin-Web.eot?#iefix') format('embedded-opentype'),
+            url('/wp-content/themes/Dexter/fonts/StagSans-Thin-Web.woff') format('woff'),
+            url('/wp-content/themes/Dexter/fonts/StagSans-Thin-Web.ttf')  format('truetype'),
+            url('/wp-content/themes/Dexter/fonts/StagSans-Thin-Web.svg#svgFontName') format('svg');
+}
+

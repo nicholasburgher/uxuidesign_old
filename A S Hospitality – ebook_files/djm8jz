@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="" >
+		<meta charset="utf-8"/>
+		<meta name="description" content=""/>
+		<title></title>
+		<link rel="stylesheet" id="ls-google-fonts-css" href="http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+		<style type="text/css">
+		    body {
+		        background-color:#017CBA;
+		        width: 100%;
+		        height: 100%;
+		        font-family:'Helvetica', sans-serif !important;
+		        font-weight:300;
+		    }
+		    form#pardot-form.form, input, select {
+		        font-family:'Helvetica', sans-serif;
+		        color:#95989A;
+		    }
+		    
+		    div {
+		        color: #4D4D4D;
+		    }
+		    .side-text div:nth-child(2) {
+		        text-align:left;
+		        font-weight:bold;
+		        font-family:'Helvetica', sans-serif;
+		    }
+		    
+		    .headimg {
+		        margin-top:20px;
+		    }
+		    .main {
+		        max-width:700px;
+		        margin: 20px auto;
+		        background-color:#F4F4F4;
+		        box-shadow:-2px 4px 30px rgba(0,0,0,.4);
+		        padding:3px;
+		    }
+		    @media screen and (max-width:800px) {
+		        .headimg {
+		            width:100% !important;
+		        }
+		        .main {
+		            width:100% !important;
+		        }
+		    }
+		    hr {
+		        color: #000;
+		        background-color: #000;
+		        height:1px;
+		        border:0px;
+		    }
+		    .intro-text, .intro-text2 {
+		        text-align:left;
+		        font-size: 15px;
+		        line-height: 20px;
+		    }
+		    .intro-text2 {
+		        font-weight: 700;
+		    }
+		    ul.feature-list {
+		        padding:7px 0 0;
+		        margin:0;
+		        list-style: none;
+		        text-align:left;
+		        margin-left:1.4em;
+		    }
+		    ul.feature-list li:before {
+		        content:"✔";
+		        margin-right: -.8em;
+		        color: #ec66a5;
+		        position: relative;
+		        left: -1.4em;
+		    }
+		    ul.feature-list li {
+		        margin-bottom:8px;
+		    }
+		    
+		    .field-label {
+		        padding-right: 10px;
+		    }
+		    input {
+		        border: 1px solid #95989A;
+		        cursor: pointer;
+		        background-color: #FFFFFF;
+		        color:;#95989A;
+		        font-size:13px;
+		        padding:2px;
+		    }
+		    .form-field {
+		        text-align:left;
+		        margin-left:55.5%;
+		    }
+		    .first_name, .last_name {
+		        right: 53% !important;
+		    }
+		    .email {
+		       margin-top:-141px;
+		    }
+		    .submit {
+		        text-align:right;
+		        margin-top:30px;
+		    }
+		    .submit > input {
+		        font-family:'Helvetica', sans-serif;
+		        font-weight:bold !important;
+		        color:white;
+		        font-size:15px !important;
+		        background-color: #ec66a5;
+		        padding:8px 20px 6px !important;
+		        border: .5px solid #d63e86;
+		        width: calc(45% - 10px);
+		        margin-bottom:20px;
+		        transition:all 300ms ease-in-out;
+		    }
+		    .submit > input:hover {
+		        background-color: #d63e86;
+		    }
+		    input.text {
+		        border-radius: 4px;
+		        height:30px;
+		        width:100%;
+		    }
+		    select {
+		        font-size:13px;
+		        width: 100%;
+		        height:36px;
+		    }
+		    p {
+		        -webkit-margin-before: .6em;
+		        -webkit-margin-before: .6em;
+		    }
+		    .form-field, .submit {
+		        position:relative;
+		        right: 20px;
+		        display: block;
+		    }
+		    .headline {
+		        background-color: white;
+		        font-family:'Helvetica', sans-serif;
+		        padding: 20px;
+		        font-size:24px;
+		    }
+		    .alt-headline-text {
+		        font-weight: 700;
+		        font-size: 36px;
+		    }
+		    .side-text {;
+		        width: 45%;
+		        padding: 20px;
+		        float:left;
+		    }
+		    .imgFrame {
+		        animation-duration:1s;
+		        animation-fill-mode:both;
+		        animation-delay: 0.5s;
+		        -webkit-animation-delay: 0.5s;
+		        max-height:480.92px;
+		        /*height:67.5vw;*/
+		        padding-bottom: 10px;
+		    }
+		    .ebook-img {
+		        width:45%;
+		        position:relative;
+		        padding-top:10px;
+		    }
+		    .footer {
+		        margin:20px 0;
+		    }
+		    .vanishIn{animation-name:vanishIn}@keyframes vanishIn{0%{opacity:0;transform-origin:50% 50%;transform:scale(2,2);filter:blur(90px)}100%{opacity:1;transform-origin:50% 50%;transform:scale(1,1);filter:blur(0)}}
+		    
+		    html {
+                position: relative;
+                min-height: 100%;
+            }
+            body {
+                margin: 0 0 100px; /* bottom = footer height */
+            }
+            footer {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 34px;
+                width: 100%;
+            }
+            form.form p.error label {
+                color:#f8b76e !important;
+            }
+            p.error {
+                color:#f8b76e !important;
+            }
+            .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+		</style>
+	<script type="text/javascript" src="http://form-cdn.pardot.com/js/piUtils.js?ver=202001021110"></script><script type="text/javascript">
+piAId = '153781';
+piCId = '10725';
+piHostname = 'pi.pardot.com';
+if(!window['pi']) { window['pi'] = {}; } pi = window['pi']; if(!pi['tracker']) { pi['tracker'] = {}; } pi.tracker.pi_form = true;
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script></head>
+	<body>
+	<div style="max-width:800px; margin:auto;" align="center">
+	<img class="headimg" src="#" style="width:800px; display:none;">
+	</div>
+	<div class="bounceInDown animated" align="center">
+	    <div class="main" align="center">
+            <form accept-charset="UTF-8" method="post" action="http://www2.dextersolutions.net/l/152781/2017-01-31/djm8jz" class="form" id="pardot-form">
+
+
+
+
+
+
+	<div class="headline">Free eBook: Excellence in Hospitality<br />
+<span class="alt-headline-text">6 Branding Trends Hoteliers Should Execute Flawlessly</span></div>
+
+<div class="side-text">
+<div class="intro-text">Discover six of the most value-increasing branding trends you need to follow as a hotel professional in our <strong>FREE&nbsp;eBOOK</strong>.</div>
+
+<hr />
+<div class="intro-text2">We&rsquo;ll tackle in depth:</div>
+
+<ul class="feature-list">
+	<li>Revamping the guest touchpoint</li>
+	<li>Balancing customization with cost</li>
+	<li>Attracting loyal guests through pet amenities</li>
+	<li>Solving unique needs</li>
+	<li>The benefits of green initiatives</li>
+	<li>Creating new experiences with large format</li>
+</ul>
+</div>
+
+<div class="imgFrame"><img alt="" class="ebook-img" src="http://www2.dextersolutions.net/ebookgra" /></div>
+
+		
+		
+		
+			<p class="form-field  first_name pd-text required    ">
+				
+					<label class="field-label" for="152781_44241pi_152781_44241">First Name</label>
+				
+				
+				<input type="text" name="152781_44241pi_152781_44241" id="152781_44241pi_152781_44241" value="" class="text" size="30" maxlength="40" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_152781_44241pi_152781_44241" style="display:none"></div>
+			
+		
+			<p class="form-field  last_name pd-text required    ">
+				
+					<label class="field-label" for="152781_44243pi_152781_44243">Last Name</label>
+				
+				
+				<input type="text" name="152781_44243pi_152781_44243" id="152781_44243pi_152781_44243" value="" class="text" size="30" maxlength="80" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_152781_44243pi_152781_44243" style="display:none"></div>
+			
+		
+			<p class="form-field  email pd-text required    ">
+				
+					<label class="field-label" for="152781_44245pi_152781_44245">Email</label>
+				
+				
+				<input type="text" name="152781_44245pi_152781_44245" id="152781_44245pi_152781_44245" value="" class="text" size="30" maxlength="255" onchange="piAjax.auditEmailField(this, 152781, 44245, 279942779);" onfocus="" />
+				
+			</p>
+			<div id="error_for_152781_44245pi_152781_44245" style="display:none"></div>
+			
+		
+			<p class="form-field  Role pd-select required    ">
+				
+					<label class="field-label" for="152781_47643pi_152781_47643">Role</label>
+				
+				
+				<select name="152781_47643pi_152781_47643" id="152781_47643pi_152781_47643" class="select" onchange=""><option value="" selected="selected"></option>
+<option value="30905">F&amp;B</option>
+<option value="30931">Front Desk</option>
+<option value="30907">General Manager</option>
+<option value="30909">Housekeeping</option>
+<option value="30911">Human Resources</option>
+<option value="30915">Operations</option>
+<option value="30919">Purchasing</option>
+<option value="30921">Rooms</option>
+<option value="30925">Sales &amp; Marketing</option>
+</select>
+				
+			</p>
+			<div id="error_for_152781_47643pi_152781_47643" style="display:none"></div>
+			
+		
+		
+		
+	<p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+		<label for="pi_extra_field">Comments</label>
+		<input type="text" name="pi_extra_field" id="pi_extra_field"/>
+	</p>
+		
+		
+		<!-- forces IE5-8 to correctly submit UTF8 content  -->
+		<input name="_utf8" type="hidden" value="&#9731;" />
+		
+		<p class="submit">
+			<input type="submit" accesskey="s" value="View the eBook" />
+		</p>
+	
+	
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+	var anchors = document.getElementsByTagName("a");
+	for (var i=0; i<anchors.length; i++) {
+		var anchor = anchors[i];
+		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+			anchor.target = "_top";
+		}
+	}
+		
+//]]>
+</script>
+<input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value="" /></form>
+<script type="text/javascript">(function(){ pardot.$(document).ready(function(){ (function() {
+	var $ = window.pardot.$;
+	window.pardot.FormDependencyMap = [];
+
+	$('.form-field-master input, .form-field-master select').each(function(index, input) {
+		$(input).on('change', window.piAjax.checkForDependentField);
+		window.piAjax.checkForDependentField.call(input);
+	});
+})(); });})();</script>
+        </div>
+        <div class="footer" align="center">
+            <a href="http://ashospitality.com/?utm_source=ebook%20landing%20page"><img src="http://storage.pardot.com/152781/42512/ASHospitalityWhite_For_Newsletter.png"></a>
+        </div>
+    </div>
+	</body>
+</html>

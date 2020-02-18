@@ -1,0 +1,244 @@
+
+/*  Fonts */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.highlight {
+  background-color: rgba(255, 230, 70, .8);
+}
+
+/* COLORS */
+:root {
+  --my-color:       orange;
+  --my-color-dark:  darkorange;
+}
+
+.bg-mycolor {
+  background-color: var(--my-color);
+}
+.bg-mycolor-dark {
+  background-color: var(--my-color-dark);
+}
+.nav-link.active, #work h2 {
+  color: rgba(38,53,69,1);
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:focus  {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.625rem;
+  letter-spacing: 0.05rem;
+  color: var(--my-color);
+}
+.navbar-light .navbar-brand:hover {
+  color: var(--my-color-dark);
+}
+.nav-tabs .nav-link.active {
+  color: var(--my-color-dark);
+}
+
+a {
+  color: var(--my-color);
+  cursor: pointer;
+}
+a:hover {
+  color: var(--my-color-dark);
+}
+
+/* Scrolling */
+#MyProcess_scroll, #work_scroll, #contact_scroll {
+  position: relative;
+  top: -3.25rem;
+  height: 0px;
+}
+
+/* Introduction Section */
+h1 {
+  font-size: 3.5rem;
+}
+@media screen and (max-width: 812px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+
+
+/* What I'm About Section */
+#WhatImAbout img {
+  padding: 1rem;
+}
+
+#WhatImAbout .col-3 {
+  transition: all ease-in-out 300ms;
+}
+#WhatImAbout .col-3:hover {
+  transform: translate(0,-5px);
+  cursor: pointer;
+}
+#what-im-about-intro {
+  /*color: white;*/
+}
+
+/* Custom Droppers */
+dd {
+  margin-bottom: 0rem;
+}
+
+.droppers dd {
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  padding: 0px 25px;
+  border-bottom: 0px solid rgba(0,0,0,0.125);
+  background-color: #eee;
+  transition: all ease-in-out 300ms;
+}
+.droppers dd p {
+  padding-right: 35px;
+}
+
+.droppers dt, .droppers .x-icon {
+  cursor: pointer;
+}
+
+.droppers dt {
+  /*color: white;*/
+  background-color: var(--my-color-dark);
+}
+
+.droppers dt span {
+  font-size: 1.16rem;
+}
+
+.droppers .x-icon {
+  opacity: 0.5;
+  color: rgba(38,53,69,1);
+  transition: opacity ease-in-out 300ms;
+}
+.droppers .x-icon:hover {
+  opacity: 0.9;
+}
+
+dt.list-group-item {
+  color: rgba(0,0,0,1);
+  letter-spacing: 0px;
+  transition: all 200ms ease-in-out;
+}
+
+dt.list-group-item:hover, .selected {
+  color: rgba(0,0,0,1) !important;
+  letter-spacing: 0.25px;
+}
+
+dd.open {
+  max-height: 1000px;
+  border-bottom: 1px solid rgba(0,0,0,0.125);
+  padding: 12px 25px;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+}
+
+.list-group-item:last-child {
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+
+/* CARDS */
+.row .card h5 {
+  margin-bottom: 0px;
+}
+
+.card-columns {
+    column-count: 3;
+}
+@media screen and (max-width: 768px) {
+  .card-columns {
+    column-count: 3;
+  }
+}
+@media screen and (max-width: 414px) {
+  .card-columns {
+    column-count: 2;
+  }
+  .card-columns .card-text {
+    display: none;
+  }
+}
+
+.card-img-top {
+  cursor: pointer;
+}
+.card-footer span small {
+  color: var(--my-color);
+  cursor: pointer;
+}
+.card-footer span small:hover {
+  color: var(--my-color-dark);
+}
+.modal-body {
+  /*margin: 0;*/
+}
+
+.modal-body .hero {
+  padding: 0 0 10px;
+}
+
+.modal-body h4 {
+  padding-top: 10px;
+}
+
+.modal-body small.date {
+  display: block;
+  margin-bottom: 13px;
+}
+
+#footer {
+  background-color: rgba(38,53,69,1);
+}
+
+.contact-box {
+  /*border: solid 1px rgba(0,0,0,.25);*/
+  border-radius: .5rem;
+  background-color: var(--my-color-dark);
+  padding: 1.5rem;
+}
+
+.contact-box, .contact-box a {
+  color: rgba(38,53,69,1);
+}
+
+.text-muted.modal-close-text:hover {
+  color: black !important;
+  cursor: pointer;
+}
+
+/* BOOTSTRP UTILITY */
+.bd-highlight {
+    background-color: rgba(86,61,124,0.15);
+    border: 1px solid rgba(86,61,124,0.15);
+}
+
+.fit-image {
+  width: 100%;
+  height: 40vw;
+  object-fit: cover;
+}

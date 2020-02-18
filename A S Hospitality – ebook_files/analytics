@@ -1,0 +1,28 @@
+
+function piResponse() {
+		piSetCookie('visitor_id152781', '532580646', 888);
+			piSetCookie('visitor_id152781-hash', 'a362d772d61359c1c460f4abdf363373133af9eaf922d7ae632569e574986898f0ac037c6db3b8406b31e1f3aff40ff3652b6cdf', 888);
+		
+		if (document.location.protocol != "https:" || (document.location.protocol == "https:" && true)) {
+		var analytics_link = document.location.protocol + "//" + "www2.dextersolutions.net/analytics?";
+		pi.tracker.visitor_id='532580646';
+
+				pi.tracker.visitor_id_sign='a362d772d61359c1c460f4abdf363373133af9eaf922d7ae632569e574986898f0ac037c6db3b8406b31e1f3aff40ff3652b6cdf';
+		
+		var variables = 'conly=true';
+		for (property in pi.tracker) {
+					variables += "&" + property + "=" + encodeURIComponent(pi.tracker[property]);
+				}
+		var headID = document.getElementsByTagName("head")[0];
+		piScriptObj[piScriptNum] = document.createElement('script');
+		piScriptObj[piScriptNum].type = 'text/javascript';
+		piScriptObj[piScriptNum].src = analytics_link + variables;
+		headID.appendChild(piScriptObj[piScriptNum]);
+		piScriptObj[piScriptNum].onload = function() { return; }
+	}
+	}
+piResponse();
+
+
+
+
